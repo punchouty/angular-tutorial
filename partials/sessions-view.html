@@ -1,0 +1,21 @@
+<table class="table movietable">
+  <tr>
+    <td><h3>Details for {{session.email}}</h3></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Email</td>
+    <td>{{session.email}}</td>
+  </tr>
+  <tr>
+    <td>Password</td>
+    <td>{{session.password}}</td>
+  </tr>
+  <tr>
+    <td>Remember Me</td>
+    <td>{{session.rememberMe}}</td>
+  </tr>
+</table>
+<div>
+  <a class="btn btn-primary" ui-sref="editSession({id:session.id})">Edit</a>
+</div>

@@ -1,0 +1,15 @@
+<a ui-sref="newSession" class="btn-primary btn-lg nodecoration">Add New Session</a>
+
+<table class="table session">
+  <tr>
+    <td><h3>All Sessions</h3></td>
+    <td></td>
+  </tr>
+  <tr ng-repeat="session in sessions">
+    <td>{{session.email}}</td>
+    <td>
+      <a class="btn btn-primary" ui-sref="viewSession({id:session.id})">View</a>
+      <a class="btn btn-danger"  ng-click="deleteSession(session)">Delete</a>
+    </td>
+  </tr>
+</table>
