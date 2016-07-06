@@ -5,11 +5,11 @@
     <td><h3>All Sessions</h3></td>
     <td></td>
   </tr>
-  <tr ng-repeat="session in sessions">
+  <tr ng-repeat="session in sessionList.sessions">
     <td>{{session.email}}</td>
     <td>
       <a class="btn btn-primary" ui-sref="viewSession({id:session.id})">View</a>
-      <a class="btn btn-danger"  ng-click="deleteSession(session)">Delete</a>
+      <a class="btn btn-danger"  ng-click="sessionList.deleteSession(session)">Delete</a>
     </td>
   </tr>
 </table>

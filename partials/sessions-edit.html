@@ -1,3 +1,15 @@
-<form class="form-horizontal" role="form" ng-submit="updateSession()">
+<form class="form-horizontal" role="form" ng-submit="sessionMain.updateSession()">
   <div ng-include="'partials/_form.html'"></div>
 </form>
+<table class="table session">
+  <tr>
+    <td><h3>All Sessions</h3></td>
+    <td></td>
+  </tr>
+  <tr ng-repeat="session in sessionMain.sessions">
+    <td>{{session.email}}</td>
+    <td>
+      {{session.password}}
+    </td>
+  </tr>
+</table>

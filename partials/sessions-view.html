@@ -1,21 +1,21 @@
 <table class="table movietable">
   <tr>
-    <td><h3>Details for {{session.email}}</h3></td>
+    <td><h3>Details for {{sessionView.session.email}}</h3></td>
     <td></td>
   </tr>
   <tr>
     <td>Email</td>
-    <td>{{session.email}}</td>
+    <td>{{sessionView.session.email}}</td>
   </tr>
   <tr>
     <td>Password</td>
-    <td>{{session.password}}</td>
+    <td>{{sessionView.session.password}}</td>
   </tr>
   <tr>
     <td>Remember Me</td>
-    <td>{{session.rememberMe}}</td>
+    <td>{{sessionView.session.rememberMe}}</td>
   </tr>
 </table>
 <div>
-  <a class="btn btn-primary" ui-sref="editSession({id:session.id})">Edit</a>
+  <a class="btn btn-primary" ui-sref="editSession({id:sessionView.session.id})">Edit</a>
 </div>

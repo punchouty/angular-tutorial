@@ -29,6 +29,21 @@ app.factory('Server', function($http) {
     	return promise;
     }
 
+    service.update = function(session) {
+        console.log("Server save : " + session);
+        var promise = $http.put(baseUrl + "sessions/" + session.id, session)
+            .then(
+            function(data) {
+                console.dir("success : ");
+                return data;
+            },
+            function(data){
+                console.dir("failure : ");
+                return data;
+            });
+        return promise;
+    }
+
     service.get = function() {
     	var promise = $http.get(baseUrl + "sessions")
     		.then(
