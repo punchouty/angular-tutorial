@@ -1,0 +1,14 @@
+{
+  "name": "learn-angular",
+  "version": "1.0.0",
+  "description": "learn angular testing",
+  "main": "index.js",
+  "scripts": {
+    
+  },
+  "keywords": [
+    "angular"
+  ],
+  "author": "rajan",
+  "license": "ISC"
+}
